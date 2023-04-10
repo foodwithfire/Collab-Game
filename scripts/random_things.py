@@ -73,3 +73,32 @@ def getMcErrors(path):
     with open(path, "w+") as file:
         for value in errors_logs:
             file.write(value)
+            
+def typewriter(string):
+    """
+    Prints a string in a typewriter style.
+    """
+    for char in string:
+        sleep(0.05)
+        print(char, end='')
+    print("\n")
+
+
+def typewriterList(list):
+    """
+    Prints a list of values in a single line in a typewriter style.
+    """
+    for value in list:
+        sleep(0.1)
+        print(value + " ")
+    print("\n")
+
+
+def typewriterLines(list):
+    """
+    Prints a list of values on several lines in a typewriter style.
+    """
+    for line in list:
+        sleep(0.1)
+        print(line)
+    print("\n")
