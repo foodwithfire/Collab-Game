@@ -1,4 +1,5 @@
 import pygame, time, os, sys, cmd, random, keyboard
+import scripts.random_things as rt
 
 # screen vars
 screen_size = (800, 600)
