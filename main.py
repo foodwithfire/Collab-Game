@@ -13,7 +13,7 @@ import scripts.random_things as rt # Not used for now
 
 # Screen variables: size, color; sets "screen" as a screen display
 screen_size = (800, 600)
-screen_color = (255, 255, 255)
+screen_color = (0, 0, 0)
 screen = pygame.display.set_mode(screen_size)
 
 # Obstacles variables; not used for now: size, density, color, and an empty array
@@ -29,8 +29,8 @@ if wall_density != 0:
 
 # Player variables: size, color, position, speed, velocity in x and y
 player_size = (50, 50)
-player_color = (0, 0, 0)
-player_pos = [0, 0]
+player_color = (255, 255, 255)
+player_pos = [350, 250]
 player_speed = 1/1000
 player_velocity_x = 0
 player_velocity_y = 0
