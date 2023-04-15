@@ -1,0 +1,62 @@
+CREDITS
+
+Original Creators
+firefood
+YouLeGamer
+
+Developement
+firefood
+YouLeGamer
+
+Story Direction
+YouLeGamer
+firefood
+
+Game Design
+YouLeGamer
+firefood
+
+Puzzles Design
+YouLeGamer
+
+Puzzles Developement
+firefood
+
+Characters Design
+YouLeGamer
+
+Characters Developement
+firefood
+
+Game Mechanics Developement
+firefood
+
+Game Mechanics Creation
+firefood
+
+Graphics & Pixel Art
+YouLeGamer
+firefood
+
+GUIs Design
+YouLeGamer
+
+GUIs Developpement
+firefood
+
+Music & Sounds
+YouLeGamer
+
+"Random Things" Developement
+YouLeGamer
+
+Special Thanks to:
+XxBlazeBerryxX (random hungarian minecraft player)
+Guido van Rossum (Python creator)
+Developers of "PyGame" (main game module)
+Hypixel Teams (Minecraft server)
+GitHub Teams (GitHub)
+Graven - Développement (YouTube Channel)
+Kind people on Stack Overflow (thanks)
+
+"If you think you cannot do it, try anyway." (Unknown)
