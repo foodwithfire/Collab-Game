@@ -2,12 +2,13 @@
 
 import pygame
 import time
-import os # Not used for now
-import sys # Not used for now
-import cmd # Not used for now
+import os  # Not used for now
+import sys  # Not used for now
+import cmd  # Not used for now
 import random
 import keyboard
-import scripts.random_things as rt # Not used for now
+import scripts.random_things as rt  # Not used for now
+from objects.player import Player  # Not used for now
 
 ##### VARIABLES SETTING-UP #####
 
