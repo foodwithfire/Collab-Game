@@ -10,8 +10,6 @@ max() -> Takes two integers and returns the biggest.
 getVowel() -> Counts the vowels of a specified string and returns the number.
 getCons() -> Counts the consonants of a specified string and returns the number.
 convertBinary() -> Converts an integer in binary (does the same as bin())
-getMcChat() -> Gets the chat lines from Minecraft logs and copies them in another file.
-getMcErrors() -> Gets the error lines from Minecraft logs and copies them in another file.
 typewriter() -> Prints a string in a "typewriter" way.
 typewriterList() -> Variant of typewriter() for lists, prints each value in a "typewriter" way.
 firstRemIdentity() -> Makes the first remarkable identity's equation.
@@ -73,34 +71,6 @@ def convertBinary(n=1):
     Converts a number in binary. By default, it's 1.
     """
     return bin(n)
-
-
-def getMcChat(path):
-    """
-    Gets chat lines from Minecraft log files and copy them in another file specified in "path".
-    """
-    chat_logs = []
-    with open(os.getenv("APPDATA") + "/.minecraft/logs/latest.log", "r") as logfile:
-        for line in logfile:
-            if ": [CHAT]" in line:
-                chat_logs.append(line)
-    with open(path, "w+") as file:
-        for value in chat_logs:
-            file.write(value)
-
-
-def getMcErrors(path):
-    """
-    Gets error lines from Minecraft log files and copy them in another file specified in "path".
-    """
-    errors_logs = []
-    with open(os.getenv("APPDATA") + "/.minecraft/logs/latest.log", "r") as logfile:
-        for line in logfile:
-            if "[Client thread/ERROR]" in line:
-                errors_logs.append(line)
-    with open(path, "w+") as file:
-        for value in errors_logs:
-            file.write(value)
 
 
 def typewriter(string):
