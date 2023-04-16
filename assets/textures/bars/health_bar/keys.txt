@@ -1,0 +1,24 @@
+KEYS FOR HEALTH BAR TEXTURES:
+
+health_bar1 = 100 HP -> 95 HP
+health_bar2 = 94 HP -> 90 HP
+health_bar3 = 89 HP -> 85 HP
+health_bar4 = 84 HP -> 80 HP
+health_bar5 = 79 HP -> 75 HP
+health_bar6 = 74 HP -> 70 HP
+health_bar7 = 69 HP -> 65 HP
+health_bar8 = 64 HP -> 60 HP
+health_bar9 = 59 HP -> 55 HP
+health_bar10 = 54 HP -> 50 HP
+health_bar11 = 49 HP -> 45 HP
+health_bar12 = 44 HP -> 40 HP
+health_bar13 = 39 HP -> 35 HP
+health_bar14 = 34 HP -> 30 HP
+health_bar15 = 29 HP -> 25 HP
+health_bar16 = 24 HP -> 20 HP
+health_bar17 = 19 HP -> 15 HP
+health_bar18 = 14 HP -> 10 HP
+health_bar19 = 9 HP -> 5 HP
+health_bar20 = 4 HP -> 1 HP
+
+dead_health_bar = 0 HP
