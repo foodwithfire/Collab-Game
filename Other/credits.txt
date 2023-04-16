@@ -1,65 +1,65 @@
 CREDITS
 
-Original Creators
+===== Original Creators =====
 firefood
 YouLeGamer
 
-Developement
+===== Developement =====
 firefood
 YouLeGamer
 
-Story Direction
+===== Story Direction =====
 YouLeGamer
 firefood
 
-Game Design
+===== Game Design =====
 YouLeGamer
 firefood
 
-Puzzles Design
+===== Puzzles Design =====
 YouLeGamer
 
-Puzzles Developement
+===== Puzzles Developement =====
 firefood
 
-Characters Design
+===== Characters Design =====
 YouLeGamer
 
-Characters Developement
+===== Characters Developement =====
 firefood
 
-Enemies Design
+===== Enemies Design =====
 YouLeGamer
 
-Enemies Developement
+===== Enemies Developement =====
 firefood
 
-Game Mechanics Developement
+===== Game Mechanics Developement =====
 firefood
 
-Game Mechanics Creation
+===== Game Mechanics Creation =====
 firefood
 
-Game Principles Developement
+===== Game Principles Developement =====
 YouLeGamer
 
-Graphics & Pixel Art
+===== Graphics & Pixel Art =====
 YouLeGamer
 firefood
 
-GUIs Design
+===== GUIs Design =====
 YouLeGamer
 
-GUIs Developpement
+===== GUIs Developpement =====
 firefood
 
-Music & Sounds
+===== Music & Sounds =====
 YouLeGamer
 
-"Random Things" Module Developement
+===== "Random Things" Module Developement =====
 YouLeGamer
 
-Special Thanks to:
+===== Special Thanks to: =====
 XxBlazeBerryxX (random hungarian minecraft player)
 Guido van Rossum (Python creator)
 Developers of "PyGame" (main game module)
@@ -69,4 +69,6 @@ Graven - Développement (YouTube Channel)
 Kind people on Stack Overflow (thanks)
 Piskel Teams (pixel art)
 
-"If you think you cannot do it, try anyway. Do what you can't." (Cyprien)
+      _________________________________________________________________________
+o-=={ "If you think you cannot do it, try anyway. Do what you can't." (Cyprien) }==-o
+      """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
