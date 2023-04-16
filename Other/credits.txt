@@ -28,11 +28,20 @@ YouLeGamer
 Characters Developement
 firefood
 
+Enemies Design
+YouLeGamer
+
+Enemies Developement
+firefood
+
 Game Mechanics Developement
 firefood
 
 Game Mechanics Creation
 firefood
+
+Game Principles Developement
+YouLeGamer
 
 Graphics & Pixel Art
 YouLeGamer
@@ -47,7 +56,7 @@ firefood
 Music & Sounds
 YouLeGamer
 
-"Random Things" Developement
+"Random Things" Module Developement
 YouLeGamer
 
 Special Thanks to:
@@ -58,5 +67,6 @@ Hypixel Teams (Minecraft server)
 GitHub Teams (GitHub)
 Graven - Développement (YouTube Channel)
 Kind people on Stack Overflow (thanks)
+Piskel Teams (pixel art)
 
 "If you think you cannot do it, try anyway. Do what you can't." (Cyprien)
