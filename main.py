@@ -28,12 +28,8 @@ if wall_density != 0:
             if random.randint(0, 100) < wall_density:
                 walls.append((pygame.Surface(wall_size), x * wall_size[0], y * wall_size[0]))
 
-# Player variables: size, color, position, speed, velocity
-player_size = (50, 50)
-player_color = (255, 255, 255)
-player_pos = [350, 250]
-player_speed = 1/1000
-player_velocity = [0, 0]
+# Player
+player = Player("firefood", 0, 0, 0, 0, 0, 0, 0)
 
 # Other variables: controls, clock, delta time and air resistance
 controls = {"up": "w",
@@ -57,23 +53,20 @@ while running:
                         keyboard.is_pressed(controls["up"]) - keyboard.is_pressed(controls["down"]))
 
     # Updates player's velocity variables
-    player_velocity[0] += player_direction[0] * player_speed
-    player_velocity[1] += player_direction[1] * player_speed
-    player_velocity[0] *= air_resistance
-    player_velocity[1] *= air_resistance
+    player.velocity[0] += player_direction[0] * player.speed
+    player.velocity[1] += player_direction[1] * player.speed
+    player.velocity[0] *= air_resistance
+    player.velocity[1] *= air_resistance
 
     # Updates variables of position
-    player_pos[0] += player_velocity[0] * delta_time
-    player_pos[1] -= player_velocity[1] * delta_time
-
-    # Creates the "player": a white square of the color and size chosen in player variables
-    player = Player("firefood", 0, 0, 0, 0, 0, 0, 0)
+    player.pos[0] += player.velocity[0] * delta_time
+    player.pos[1] -= player.velocity[1] * delta_time
 
     # Displays obstacles
     for wall in walls:
         wall[0].fill(wall_color)
         screen.blit(wall[0], (wall[1], wall[2]))
-    screen.blit(player.surface, player_pos)
+    screen.blit(player.surface, player.pos)
 
     # Updates the screen
     pygame.display.flip()
