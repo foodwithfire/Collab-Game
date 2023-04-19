@@ -2,7 +2,6 @@ import pygame
 
 
 class Player:
-
     def __init__(self, player_name, player_health, player_damage, mana, player_level, placeholder, player_pos, player_weapon):
         self.img_path = "assets/textures/player.png"
         self.surface = pygame.image.load(self.img_path)
@@ -14,3 +13,7 @@ class Player:
         self.inventory = placeholder  # Awaiting to create the inventory class which will consist of a dictionary
         self.pos = player_pos
         self.weapon = player_weapon
+        self.size = (50, 50)
+        self.pos = [350, 250]
+        self.speed = 1 / 1000
+        self.velocity = [0, 0]
