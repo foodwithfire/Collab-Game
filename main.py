@@ -67,14 +67,13 @@ while running:
     player_pos[1] -= player_velocity[1] * delta_time
 
     # Creates the "player": a white square of the color and size chosen in player variables
-    player = pygame.Surface(player_size)
-    player.fill(player_color)
+    player = Player("firefood", 0, 0, 0, 0, 0, 0, 0)
 
     # Displays obstacles
     for wall in walls:
         wall[0].fill(wall_color)
         screen.blit(wall[0], (wall[1], wall[2]))
-    screen.blit(player, player_pos)
+    screen.blit(player.surface, player_pos)
 
     # Updates the screen
     pygame.display.flip()
