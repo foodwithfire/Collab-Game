@@ -1,12 +1,12 @@
+import pygame
+
 class Button:
-    def __init__(self, pos, size, screen):
-        self.pos = pos # tuple
-        self.size = size # tuple
+    def __init__(self, pos, size, screen, text=None):
+        self.pos = pos
+        self.size = size
         self.screen = screen
+        self.text = text
         self.surface = pygame.Surface(self.size)
-        
-    def function(self):
-        pass
 
     def update(self):
         self.mouse_pos = pygame.mouse.get_pos()
@@ -14,7 +14,6 @@ class Button:
            (self.mouse_pos[1] > self.pos[1] and self.mouse_pos[1] < (self.pos[1] + self.size[1])):
             if pygame.mouse.get_pressed()[0]:
                 self.color = (255, 255, 255)
-                self.function()
             else:
                 self.color = (170, 170, 170)
         else:
