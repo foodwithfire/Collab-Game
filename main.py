@@ -8,7 +8,8 @@ import cmd  # Not used for now
 import random
 import keyboard
 import scripts.random_things as rt  # Not used for now
-from objects.player import Player  # Not used for now
+from objects.player import Player
+from objects.button import Button
 
 # VARIABLES SETTING-UP -------------------------------------------------------------------------------------------------
 
@@ -43,10 +44,12 @@ air_resistance = 0.99
 running = True
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
-
+button1 = Button((150, 100), (200, 100), screen)
 while running:
     # Fills screen with black (the color wanted in "screen variables")
     screen.fill(screen_color)
+
+    button1.update()
 
     # Gets inputs from the keyboard and updates player's position
     player_direction = (keyboard.is_pressed(controls["right"]) - keyboard.is_pressed(controls["left"]),
