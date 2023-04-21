@@ -21,8 +21,8 @@ as *Lemonalmond*. Its properties aren't fully discovered yet; however, it's know
 extra energy, and it was supposed that Lemonalmond was a derivative of caffeine never discovered before. This
 theory hasn't been proven yet.
 
-Tin cans containing **Lemonwater** are roughly 6 inches tall (12,5cm) and full of **Lemonwater**. Consumption
-of already opened cans is not safe.
+Tin cans containing **Lemonwater** are roughly 6 inches tall (12,5cm) and full of **Lemonwater**. Each can contains
+250 mL. Consumption of already opened cans is not safe. 
 
 
 **Lemonwater** is, currently, the only known efficient way of hydratation in the world, because
@@ -46,5 +46,13 @@ appear, and that before there wasn't anything.
 **Lemonwater** was first found during the First Monstrous War, but people thought it was poison delivered by
 monsters and then didn't drink it. At the end of the war, **Lemonwater** has immediately stopped appearing in the
 world. It seems that **Lemonwater** only appears when water is corrupted during Monstrous Wars.
+
+---
+
+### Dangers
+
+**Lemonwater** can become toxic if drank at high rates. It can occur diabetes, as well as "bewildement of awareness", which will
+make the drinker really confused, puzzled for simple things. This state generally lasts 8 hours. It is then not recommanded to
+drink more than 3 cans of **Lemonwater** per day (750 mL/day).
 
 #### End of report.
