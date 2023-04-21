@@ -1,5 +1,5 @@
 import pygame, keyboard
-import collab_with_youlegamer.settings as settings
+import [dossier].settings as settings
 
 
 class Player:
