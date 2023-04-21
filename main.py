@@ -32,7 +32,7 @@ if wall_density != 0:
 # Player
 player = Player(screen, "firefood", 0, 0, 0, 0, 0, 0)
 # Button
-button1 = Button((150, 100), (200, 100), screen)
+button1 = Button("assets/textures/player.png", (0, 0), screen)
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
