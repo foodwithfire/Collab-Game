@@ -58,4 +58,15 @@ world. It seems that **Lemonwater** only appears when water is corrupted during 
 make the drinker really confused, puzzled for simple things. This state generally lasts 8 hours. It is then not recommanded to
 drink more than 3 cans of **Lemonwater** per day (750 mL/day).
 
+---
+
+### Lore
+
+Lemonwater Can
+
+Rarity: Common
+
+This delicious drink is made of water, lemon juice and sugar. It's a good replacement for corrupted water.
+Besides, Lemonwater grants extra energy because of the Lemonalmond.
+
 #### End of report.
