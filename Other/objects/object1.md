@@ -60,6 +60,20 @@ drink more than 3 cans of **Lemonwater** per day (750 mL/day).
 
 ---
 
+## Do and Don't
+
+**Do**:
+- Drink **Lemonwater** instead of Corrupted Water.
+- Grab **Lemonwater** Cans or Bottles.
+
+**Don't**:
+- Drink more than 3 **Lemonwater** cans a day.
+- Waste **Lemonwater** away.
+- Drink in already opened cans.
+- Keep a **Lemonwater** can open for more than 3 days and/or drink those cans.
+
+---
+
 ### Lore
 
 Lemonwater Can
@@ -69,4 +83,6 @@ Rarity: Common
 This delicious drink is made of water, lemon juice and sugar. It's a good replacement for corrupted water.
 Besides, Lemonwater grants extra energy because of the Lemonalmond.
 
+
+#### End of report.
 #### End of report.
