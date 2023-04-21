@@ -22,7 +22,7 @@ extra energy, and it was supposed that Lemonalmond was a derivative of caffeine 
 theory hasn't been proven yet.
 
 Tin cans containing **Lemonwater** are roughly 6 inches tall (12,5cm) and full of **Lemonwater**. Each can contains
-250 mL. Consumption of already opened cans is not safe. 
+250 mL. Consumption of already opened cans has a 25% chance to result in an infection.
 
 
 **Lemonwater** is, currently, the only known efficient way of hydratation in the world, because
