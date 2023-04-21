@@ -22,7 +22,10 @@ extra energy, and it was supposed that Lemonalmond was a derivative of caffeine 
 theory hasn't been proven yet.
 
 Tin cans containing **Lemonwater** are roughly 6 inches tall (12,5cm) and full of **Lemonwater**. Each can contains
-250 mL. Consumption of already opened cans has a 25% chance to result in an infection.
+250 mL. Consumption of already opened cans is highly discounselled because of the potential bacteria and viruses the
+Wanderer (or Monsters) that drank in it had. Scientist estim that you have 1 chance on 4 to get an infection by
+drinking already opened cans. If you're in doubt, boil the water, that will likely kill any bacteria or virus in the
+water.
 
 
 **Lemonwater** is, currently, the only known efficient way of hydratation in the world, because
