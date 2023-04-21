@@ -1,0 +1,4 @@
+controls = {"up": "z",
+            "left": "q",
+            "down": "s",
+            "right": "d"}
