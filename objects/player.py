@@ -1,15 +1,16 @@
 import pygame
 import keyboard
-import other.settings as settings
+import Foods_Legend.other.settings as settings
 
 
 class Player:
-    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon):
+    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon, scale):
         self.screen = screen
         self.controls = settings.controls  # Gets the controls from the dictionary in settings
         self.img_path = "assets/textures/player.png"  # Put the player's texture in
         self.surface = pygame.image.load(self.img_path)  # Loads the image
-        self.scale = 48  # Should remain 48 in buildings
+        self.scale = scale  # Should remain 48 in buildings
+        self.rect = pygame.rect.Rect((0, 0), (self.surface.get_size()[0]*self.scale, self.surface.get_size()[1]*self.scale))
 
         self.name = player_name  # Should have the player specified name, "food" by default (or "firefood")
         self.health = player_health  # 100 by default
@@ -20,7 +21,6 @@ class Player:
         self.weapon = player_weapon  # Should be "knife" by default
 
         self.pos = (0, 0)
-        self.size = (50, 50)
         self.pos = [350, 250]
         self.speed = 0.1
 
@@ -28,6 +28,7 @@ class Player:
         self.delta_time = self.clock.tick(60)
 
     def update(self):
+        self.rect = pygame.rect.Rect(self.pos, (self.surface.get_size()[0]*self.scale, self.surface.get_size()[1]*self.scale))
         # Defines the direction
         self.player_direction = (
             keyboard.is_pressed(self.controls["right"]) - keyboard.is_pressed(self.controls["left"]),
@@ -38,5 +39,5 @@ class Player:
         self.pos[1] -= self.player_direction[1] * self.speed * self.delta_time
 
         # Scaling the player
-        self.surface = pygame.transform.scale(self.surface, (self.scale, self.scale))
+        self.surface = pygame.transform.scale(self.surface, (self.surface.get_size()[0]*self.scale, self.surface.get_size()[1]*self.scale))
         self.screen.blit(self.surface, self.pos)
