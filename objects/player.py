@@ -3,13 +3,13 @@ import Foods_Legend.settings as settings
 
 
 class Player:
-    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon):
+    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon, scale):
         self.screen = screen
         self.controls = settings.controls
         self.img_path = "assets/textures/player.png"
         self.surface = pygame.image.load(self.img_path)
         self.rect = pygame.rect.Rect((0, 0), self.surface.get_size())
-        self.scale = 48
+        self.scale = scale
 
         self.name = player_name
         self.health = player_health
@@ -20,7 +20,7 @@ class Player:
         self.weapon = player_weapon
 
         self.pos = (0, 0)
-        self.size = (50, 50)
+        self.size = self.surface.get_size()
         self.pos = [350, 250]
         self.speed = 0.1
 
@@ -36,5 +36,5 @@ class Player:
         self.pos[0] += self.player_direction[0] * self.speed * self.delta_time
         self.pos[1] -= self.player_direction[1] * self.speed * self.delta_time
 
-        self.surface = pygame.transform.scale(self.surface, (self.scale, self.scale))
+        self.surface = pygame.transform.scale(self.surface, (self.size[0]*self.scale, self.size[1]*self.scale))
         self.screen.blit(self.surface, self.pos)

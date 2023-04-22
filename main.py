@@ -26,7 +26,7 @@ player = None
 
 def start():
     global player, started, background
-    player = Player(screen, "food", 0, 0, 0, 0, 0, 0)
+    player = Player(screen, "food", 0, 0, 0, 0, 0, 0, 1)
     background = Image("assets/textures/map/buildings/food_house.png", screen)
     started = True
 
