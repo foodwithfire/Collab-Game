@@ -20,12 +20,14 @@ screen_color = (0, 0, 0)
 screen = pygame.display.set_mode(screen_size)
 
 main_menu = Image("assets/textures/gui/main_menu/main_menu.png", screen)
+main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed.png", "assets/textures/buttons/main_menu/play_pressed.png", screen, 4)
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
 while running:
 
     main_menu.update((0, 0))
+    main_menu_play_button.update((350, 250))
 
     pygame.display.flip()
     for event in pygame.event.get():
