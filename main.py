@@ -33,12 +33,14 @@ if wall_density != 0:
 player = Player(screen, "firefood", 0, 0, 0, 0, 0, 0)
 # Button
 button1 = Button("assets/textures/player.png", (0, 0), screen)
+# Background
+background = pygame.image.load("assets/textures/map/buildings/food_house.png")
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
 while running:
     # Fills screen with black (the color wanted in "screen variables")
-    screen.fill(screen_color)
+    screen.blit(background, [0, 0])
 
     # Displays obstacles
     for wall in walls:

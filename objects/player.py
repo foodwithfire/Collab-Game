@@ -1,5 +1,5 @@
 import pygame, keyboard
-import [dossier].settings as settings
+import settings as settings
 
 
 class Player:
