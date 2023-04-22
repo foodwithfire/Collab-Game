@@ -1,5 +1,5 @@
 import pygame, keyboard
-import settings as settings
+import Foods_Legend.other.settings as settings
 
 
 class Player:
@@ -8,7 +8,7 @@ class Player:
         self.controls = settings.controls
         self.img_path = "assets/textures/player.png"
         self.surface = pygame.image.load(self.img_path)
-        self.scale = 128
+        self.scale = 32
 
         self.name = player_name
         self.health = player_health
@@ -21,24 +21,18 @@ class Player:
         self.pos = (0, 0)
         self.size = (50, 50)
         self.pos = [350, 250]
-        self.speed = 1 / 1000
-        self.velocity = [0, 0]
-        self.air_resistance = 0.99
+        self.speed = 0.1
 
         self.clock = pygame.time.Clock()
         self.delta_time = self.clock.tick(60)
 
     def update(self):
-        player_direction = (keyboard.is_pressed(self.controls["right"]) - keyboard.is_pressed(self.controls["left"]),
-                            keyboard.is_pressed(self.controls["up"]) - keyboard.is_pressed(self.controls["down"]))
-
-        self.velocity[0] += player_direction[0] * self.speed
-        self.velocity[1] += player_direction[1] * self.speed
-        self.velocity[0] *= self.air_resistance
-        self.velocity[1] *= self.air_resistance
-
-        self.pos[0] += self.velocity[0] * self.delta_time
-        self.pos[1] -= self.velocity[1] * self.delta_time
+        self.player_direction = (
+            keyboard.is_pressed(self.controls["right"]) - keyboard.is_pressed(self.controls["left"]),
+            keyboard.is_pressed(self.controls["up"]) - keyboard.is_pressed(self.controls["down"])
+)
+        self.pos[0] += self.player_direction[0] * self.speed * self.delta_time
+        self.pos[1] -= self.player_direction[1] * self.speed * self.delta_time
 
         self.surface = pygame.transform.scale(self.surface, (self.scale, self.scale))
         self.screen.blit(self.surface, self.pos)
