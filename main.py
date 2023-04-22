@@ -19,11 +19,6 @@ screen_size = (800, 600)
 screen_color = (0, 0, 0)
 screen = pygame.display.set_mode(screen_size)
 
-# Player
-player = Player(screen, "firefood", 0, 0, 0, 0, 0, 0)
-# Button
-button1 = Button("assets/textures/player.png", (0, 0), screen)
-# Background
 main_menu = Image("assets/textures/gui/main_menu/main_menu.png", screen)
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
