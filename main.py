@@ -25,8 +25,9 @@ player = None
 
 
 def start():
-    global player, started
+    global player, started, background
     player = Player(screen, "food", 0, 0, 0, 0, 0, 0)
+    background = Image("assets/textures/map/buildings/food_house.png", screen)
     started = True
 
 
@@ -37,6 +38,7 @@ running = True
 while running:
     screen.fill("white")
     if started:
+        background.update((0, 0))
         player.update()
     else:
         main_menu.update((0, 0))
