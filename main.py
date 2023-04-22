@@ -36,7 +36,6 @@ main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
 while running:
-    screen.fill("white")
     if started:
         background.update((0, 0))
         player.update()

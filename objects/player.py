@@ -1,5 +1,5 @@
 import pygame, keyboard
-import other.settings as settings
+import Foods_Legend.settings as settings
 
 
 class Player:
@@ -8,6 +8,7 @@ class Player:
         self.controls = settings.controls
         self.img_path = "assets/textures/player.png"
         self.surface = pygame.image.load(self.img_path)
+        self.rect = pygame.rect.Rect((0, 0), self.surface.get_size())
         self.scale = 48
 
         self.name = player_name
@@ -27,6 +28,7 @@ class Player:
         self.delta_time = self.clock.tick(60)
 
     def update(self):
+        self.rect = pygame.rect.Rect(self.pos, self.surface.get_size())
         self.player_direction = (
             keyboard.is_pressed(self.controls["right"]) - keyboard.is_pressed(self.controls["left"]),
             keyboard.is_pressed(self.controls["up"]) - keyboard.is_pressed(self.controls["down"])
