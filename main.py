@@ -8,8 +8,9 @@ import cmd  # Not used for now
 import random
 import keyboard
 import scripts.random_things as rt  # Not used for now
-from objects.player import Player
-from objects.button import Button
+from objects.image import *
+from objects.player import *
+from objects.button import *
 
 # VARIABLES SETTING-UP -------------------------------------------------------------------------------------------------
 
@@ -18,38 +19,19 @@ screen_size = (800, 600)
 screen_color = (0, 0, 0)
 screen = pygame.display.set_mode(screen_size)
 
-# Obstacles variables; not used for now: size, density, color, and an empty array
-wall_size = (20, 20)
-wall_density = 0
-wall_color = (150, 150, 150)
-walls = []
-if wall_density != 0:
-    for y in range(int(screen_size[1] / wall_size[0])):
-        for x in range(int(screen_size[0] / wall_size[0])):
-            if random.randint(0, 100) < wall_density:
-                walls.append((pygame.Surface(wall_size), x * wall_size[0], y * wall_size[0]))
-
 # Player
 player = Player(screen, "firefood", 0, 0, 0, 0, 0, 0)
 # Button
 button1 = Button("assets/textures/player.png", (0, 0), screen)
 # Background
-background = pygame.image.load("assets/textures/map/buildings/food_house.png")
+main_menu = Image("assets/textures/gui/main_menu/main_menu.png", screen)
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
 while running:
-    # Fills screen with black (the color wanted in "screen variables")
-    screen.blit(background, [0, 0])
 
-    # Displays obstacles
-    for wall in walls:
-        wall[0].fill(wall_color)
-        screen.blit(wall[0], (wall[1], wall[2]))
+    main_menu.update((0, 0))
 
-    # Updates the screen
-    player.update()
-    button1.update()
     pygame.display.flip()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
