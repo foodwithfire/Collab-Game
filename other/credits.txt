@@ -1,0 +1,77 @@
+CREDITS
+
+===== Original Creators =====
+firefood
+YouLeGamer
+
+===== Developement =====
+firefood
+YouLeGamer
+
+===== Story Direction =====
+YouLeGamer
+firefood
+
+===== Game Design =====
+YouLeGamer
+firefood
+
+===== Puzzles Design =====
+YouLeGamer
+
+===== Puzzles Developement =====
+firefood
+
+===== Characters Design =====
+YouLeGamer
+
+===== Characters Developement =====
+firefood
+
+===== Enemies Design =====
+YouLeGamer
+
+===== Enemies Developement =====
+firefood
+
+===== Game Mechanics Developement =====
+firefood
+
+===== Game Mechanics Creation =====
+firefood
+
+===== Game Principles Developement =====
+YouLeGamer
+
+===== Graphics & Pixel Art =====
+YouLeGamer
+firefood
+
+===== Map Graphics =====
+YouLeGamer
+
+===== GUIs Design =====
+YouLeGamer
+
+===== GUIs Developement =====
+firefood
+
+===== Music & Sounds =====
+YouLeGamer
+
+===== "Random Things" Module Developement =====
+YouLeGamer
+
+===== Special Thanks to: =====
+XxBlazeBerryxX (random hungarian minecraft player)
+Guido van Rossum (Python creator)
+Developers of "PyGame" (main game module)
+Hypixel Teams (Minecraft server)
+GitHub Teams (GitHub)
+Graven - Développement (YouTube Channel)
+Kind people on Stack Overflow (thanks)
+Piskel Teams (pixel art)
+
+      _________________________________________________________________________
+o-=={ "If you think you cannot do it, try anyway. Do what you can't." (Cyprien) }==-o
+      """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
