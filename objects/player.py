@@ -1,6 +1,6 @@
 import pygame
 import keyboard
-import Foods_Legend.other.settings as settings
+import other.settings as settings
 
 
 class Player:
