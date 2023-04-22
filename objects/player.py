@@ -1,5 +1,5 @@
 import pygame, keyboard
-import Foods_Legend.other.settings as settings
+import other.settings as settings
 
 
 class Player:
@@ -8,7 +8,7 @@ class Player:
         self.controls = settings.controls
         self.img_path = "assets/textures/player.png"
         self.surface = pygame.image.load(self.img_path)
-        self.scale = 32
+        self.scale = 48
 
         self.name = player_name
         self.health = player_health
