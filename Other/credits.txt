@@ -53,7 +53,7 @@ YouLeGamer
 ===== GUIs Design =====
 YouLeGamer
 
-===== GUIs Developpement =====
+===== GUIs Developement =====
 firefood
 
 ===== Music & Sounds =====
