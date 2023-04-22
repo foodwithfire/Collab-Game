@@ -30,7 +30,7 @@ player = None
 # Start function for the menu
 def start():
     global player, started, background
-    player = Player(screen, "food", 0, 0, 0, 0, 0, 0)
+    player = Player(screen, "food", 0, 0, 0, 0, 0, 0, 1)
     background = Image("assets/textures/map/buildings/food_house.png", screen)
     started = True
 
@@ -40,7 +40,6 @@ main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
 while running:
-    screen.fill("white")
     if started:
         background.update((0, 0))
         player.update()
