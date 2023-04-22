@@ -20,5 +20,6 @@ If you decide to clone the repository, type the following in your Git terminal:
 Else, download a .zip copy of this repository, decompress it with a software like WinRar or 7zip.
 
 ### Running the game
-
-Just doubleclick the "main.py" file.
+##### 2 ways :
+- doubleclick the "main.py" file.
+- PyCharm : open the "main.py" file and press Maj+F10.
