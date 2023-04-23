@@ -23,7 +23,7 @@ started = False
 player = None
 
 # Start function for the menu, comes from Random Things
-rt.start(screen, "firefood", 100, 10, 100, 0, inventory, "Fist", 100)
+rt.start(screen, "firefood", 100, 10, 100, 0, inventory, "Fist", 100)  # march po
 background = Image("assets/textures/map/buildings/food_house.png", screen)
 
 # Play button
