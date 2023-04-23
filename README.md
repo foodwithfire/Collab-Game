@@ -7,8 +7,6 @@ in an end-of-XIXth century steampunk world.
 
 **Project has begun on April 10th, 2023.**
 
-# :sword: Food's Legend: The Souls' Betrayal
-
 ## :computer: Getting Started
 
 ### Prerequisites
