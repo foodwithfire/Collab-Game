@@ -1,16 +1,8 @@
 # IMPORTS --------------------------------------------------------------------------------------------------------------
-
-import pygame
-import time
-import os  # Not used for now
-import sys  # Not used for now
-import cmd  # Not used for now
-import random
-import keyboard
-import scripts.random_things as rt  # Not used for now
-from objects.image import *
-from objects.player import *
+import scripts.random_things as rt
+from classes.image import *
 from objects.button import *
+import classes.inventory as inv
 
 # Initiating Pygame
 pygame.init()
@@ -22,13 +14,16 @@ screen_size = (800, 600)
 screen_color = (0, 0, 0)
 screen = pygame.display.set_mode(screen_size)
 
+# Inventory setting-up
+inventory = [inv.inventory_slots, inv.hotbar]
+
 # Setting the menu
 main_menu = Image("assets/textures/gui/main_menu/main_menu.png", screen)
 started = False
 player = None
 
 # Start function for the menu, comes from Random Things
-rt.start(screen, "food", 100, 10, 100, 0, 0, "Fist")
+rt.start(screen, "firefood", 100, 10, 100, 0, inventory, "Fist", 100)
 background = Image("assets/textures/map/buildings/food_house.png", screen)
 
 # Play button
