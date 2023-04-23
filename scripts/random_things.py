@@ -1,5 +1,6 @@
-import os
+from objects.image import Image
 from time import sleep
+from objects.player import Player
 
 """
 Welcome in the Random Things Functions Module!
@@ -15,6 +16,7 @@ typewriterList() -> Variant of typewriter() for lists, prints each value in a "t
 firstRemIdentity() -> Makes the first remarkable identity's equation.
 secondRemIdentity() -> Makes the second remarkable identity's equation.
 thirdRemIdentity() -> Makes the third remarkable identity's equation.
+start() -> Makes the game start
 """
 
 
@@ -121,3 +123,8 @@ def thirdRemIdentity(a, b):
     """
     result = a**2 - b**2
     return result
+
+def start(screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon, player_money):
+    global player, started, background
+    player = Player(screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon, player_money)
+    started = True

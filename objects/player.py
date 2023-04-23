@@ -4,7 +4,7 @@ import other.settings as settings
 
 
 class Player:
-    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon, scale):
+    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, placeholder, player_weapon, player_money, scale):
         self.screen = screen
         self.controls = settings.controls  # Gets the controls from the dictionary in settings
         self.img_path = "assets/textures/player.png"  # Put the player's texture in
@@ -18,7 +18,8 @@ class Player:
         self.mana = mana  # 100 by default
         self.level = player_level  # 0 by default
         self.inventory = placeholder  # Awaiting to create the inventory class which will consist of a dictionary
-        self.weapon = player_weapon  # Should be "knife" by default
+        self.weapon = player_weapon  # Should be "fist" by default
+        self.money = player_money # Should be "100" by default
 
         self.pos = (0, 0)
         self.pos = [350, 250]

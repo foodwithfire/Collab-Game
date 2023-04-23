@@ -27,15 +27,12 @@ main_menu = Image("assets/textures/gui/main_menu/main_menu.png", screen)
 started = False
 player = None
 
-# Start function for the menu
-def start():
-    global player, started, background
-    player = Player(screen, "food", 0, 0, 0, 0, 0, 0, 1)
-    background = Image("assets/textures/map/buildings/food_house.png", screen)
-    started = True
+# Start function for the menu, comes from Random Things
+rt.start(screen, "food", 100, 10, 100, 0, 0, "Fist")
+background = Image("assets/textures/map/buildings/food_house.png", screen)
 
 # Play button
-main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed.png", "assets/textures/buttons/main_menu/play_pressed.png", screen, 4, start)
+main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed.png", "assets/textures/buttons/main_menu/play_pressed.png", screen, 4, rt.start())
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True
