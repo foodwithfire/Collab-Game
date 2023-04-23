@@ -1,4 +1,4 @@
-# :sword: Food's Legend: The Souls' Betrayal
+# :crossed_swords: Food's Legend: The Souls' Betrayal
 
 ## :computer: Getting Started
 
@@ -21,5 +21,5 @@ Else, download a .zip copy of this repository, decompress it with a software lik
 
 ### Running the game
 ##### 2 ways :
-- doubleclick the "main.py" file.
+- Double-cliking the "main.py" file.
 - PyCharm : open the "main.py" file and press Maj+F10.
