@@ -1,5 +1,4 @@
 from time import sleep
-from objects.player import Player
 
 """
 Welcome in the Random Things Functions Module!
@@ -122,12 +121,3 @@ def thirdRemIdentity(a, b):
     """
     result = a**2 - b**2
     return result
-
-def start(screen, player_name, player_health, player_damage, mana, player_level, inventory, player_weapon, player_money):
-    """
-    Starts the game. Takes as args, in the order:
-    screen, player_name, player_health, player_damage, mana, player_level, inventory, player_weapon, player_money
-    """
-    global player, started, background
-    player = Player(screen, player_name, player_health, player_damage, mana, player_level, inventory, player_weapon, player_money)
-    started = True

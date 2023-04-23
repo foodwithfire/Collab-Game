@@ -2,6 +2,8 @@
 import scripts.random_things as rt
 from classes.image import *
 from objects.button import *
+from objects.player import Player
+
 import classes.inventory as inv
 
 # Initiating Pygame
@@ -23,11 +25,21 @@ started = False
 player = None
 
 # Start function for the menu, comes from Random Things
-rt.start(screen, "firefood", 100, 10, 100, 0, inventory, "Fist", 100)  # march po
 background = Image("assets/textures/map/buildings/food_house.png", screen)
 
+
+def start():
+    """
+    Starts the game. Takes as args, in the order:
+    screen, player_name, player_health, player_damage, mana, player_level, inventory, player_weapon, player_money
+    """
+    global player, started, background
+    player = Player((screen, "food", 0, 0, 0, 0, 0, 0, 0, 1))
+    started = True
+
+
 # Play button
-main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed.png", "assets/textures/buttons/main_menu/play_pressed.png", screen, 4, rt.start())
+main_menu_play_button = Button("assets/textures/buttons/main_menu/play_unpressed.png", "assets/textures/buttons/main_menu/play_pressed.png", screen, 4, start)
 
 # GAME LOOP ------------------------------------------------------------------------------------------------------------
 running = True

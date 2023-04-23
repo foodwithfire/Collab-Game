@@ -3,23 +3,24 @@ import keyboard
 import other.settings as settings
 
 class Player:
-    def __init__(self, screen, player_name, player_health, player_damage, mana, player_level, inventory, player_weapon, player_money, scale):
-        self.screen = screen
+    def __init__(self, args):
+        self.screen = args[0]
         self.controls = settings.controls  # Gets the controls from the dictionary in settings
         self.img_path = "assets/textures/player.png"  # Put the player's texture in
         self.surface = pygame.image.load(self.img_path)  # Loads the image
-        self.scale = scale  # Should remain 48 in buildings
+        self.scale = args[9]  # Should remain 1 in buildings
         self.rect = pygame.rect.Rect((0, 0), (self.surface.get_size()[0]*self.scale, self.surface.get_size()[1]*self.scale))
 
-        self.name = player_name  # Should have the player specified name, "food" by default (or "firefood")
-        self.health = player_health  # 100 by default
-        self.damage = player_damage  # 10 by default
-        self.mana = mana  # 100 by default
-        self.level = player_level  # 0 by default
-        self.inventory = inventory
-        self.weapon = player_weapon  # Should be "fist" by default
-        self.money = player_money # Should be "100" by default
+        self.name = args[1]  # Should have the player specified name, "food" by default (or "firefood")
+        self.health = args[2]  # 100 by default
+        self.damage = args[3]  # 10 by default
+        self.mana = args[4]  # 100 by default
+        self.level = args[5]  # 0 by default
+        self.inventory = args[6]
+        self.weapon = args[7]  # Should be "fist" by default
+        self.money = args[8] # Should be "100" by default
 
+        self.player_direction = None
         self.pos = (0, 0)
         self.pos = [350, 250]
         self.speed = 0.1
