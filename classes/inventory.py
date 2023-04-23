@@ -1,12 +1,12 @@
 import os  # Not used yet
+import json
 
-"""
-Ici faudra faire en sorte que ça ouvre les fichiers de sauvegarde en json et set toutes les keys d'inventory aux bonnes
-valeurs
-"""
-placeholder = 0
+if os.path.exists("saves/save.json"):
+    exists = True
+else:
+    exists = False
 
-if placeholder == 69:
+if exists:
     inventory = "prout"
 else:
     hotbar = {
