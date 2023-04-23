@@ -7,6 +7,8 @@ in an end-of-XIXth century steampunk world.
 
 **Project has begun on April 10th, 2023.**
 
+# :sword: Food's Legend: The Souls' Betrayal
+
 ## :computer: Getting Started
 
 ### Prerequisites
@@ -48,3 +50,6 @@ When you first run the game, the controls will be in ZQSD, but you can change it
 **Interact**: *(not implemented yet)* **I**
 
 More infos will be displayed soon.
+##### 2 ways :
+- doubleclick the "main.py" file.
+- PyCharm : open the "main.py" file and press Maj+F10.
