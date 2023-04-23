@@ -1,4 +1,4 @@
-# Food's Legend: The Souls' Betrayal
+# :sword: Food's Legend: The Souls' Betrayal
 
 ## :computer: Getting Started
 
