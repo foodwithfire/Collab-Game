@@ -1,4 +1,5 @@
 from time import sleep
+import os
 
 """
 Welcome in the Random Things Functions Module!
@@ -121,3 +122,16 @@ def thirdRemIdentity(a, b):
     """
     result = a**2 - b**2
     return result
+
+def ifNotExist(path):
+    if os.path.exists(path):
+        return False
+    else:
+        return True
+
+def ifExist(path):
+    if os.path.exists(path):
+        return True
+    else:
+        return False
+
