@@ -126,26 +126,42 @@ def thirdRemIdentity(a, b):
     result = a**2 - b**2
     return result
 
+
+def ifNotExist(path):
+    """
+    Returns true if the path doesn't exist.
+    """
+    if os.path.exists(path):
+        return False
+    else:
+        return True
+
+
 def ifExist(path):
+    """
+    Returns true if the path exists.
+    """
     if os.path.exists(path):
         return True
     else:
         return False
 
-def ifNotExist(path):
-    if os.path.exist(path):
-        return False
-    else:
-        return True
 
 def isOdd(number):
+    """
+    Returns true if the number is odd.
+    """
     if (number % 2) == 0:
         return False
     else:
         return True
    
 def isEven(number):
+    """
+    Returns true of the number is even.
+    """
     if (number % 2) == 0:
         return True
     else:
         return False
+
