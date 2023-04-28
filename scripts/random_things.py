@@ -15,7 +15,10 @@ typewriterList() -> Variant of typewriter() for lists, prints each value in a "t
 firstRemIdentity() -> Makes the first remarkable identity's equation.
 secondRemIdentity() -> Makes the second remarkable identity's equation.
 thirdRemIdentity() -> Makes the third remarkable identity's equation.
-start() -> Makes the game start
+ifExist() -> Returns true if the path exists. (Batch's "if exist")
+ifNotExist() -> Returns true if the path doesn't exists. (Batch's "if not exist")
+isOdd() -> Returns true if the number is odd.
+isEven() -> Returns true if the number is even.
 """
 
 
@@ -123,14 +126,41 @@ def thirdRemIdentity(a, b):
     result = a**2 - b**2
     return result
 
+
 def ifNotExist(path):
+    """
+    Returns true if the path doesn't exist.
+    """
     if os.path.exists(path):
         return False
     else:
         return True
 
+
 def ifExist(path):
+    """
+    Returns true if the path exists.
+    """
     if os.path.exists(path):
+        return True
+    else:
+        return False
+
+
+def isOdd(number):
+    """
+    Returns true if the number is odd.
+    """
+    if (number % 2) == 0:
+        return False
+    else:
+        return True
+   
+def isEven(number):
+    """
+    Returns true of the number is even.
+    """
+    if (number % 2) == 0:
         return True
     else:
         return False
