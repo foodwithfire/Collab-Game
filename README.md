@@ -50,3 +50,5 @@ When you first run the game, the controls will be in ZQSD, but you can change it
 **Interact**: *(not implemented yet)* **I**
 
 More infos will be displayed soon.
+
+update: ded game ngl
